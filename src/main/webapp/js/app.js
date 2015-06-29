@@ -5,3 +5,9 @@ app.controller('HelloCtrl', function($scope, $http) {
         $scope.helloMessage = helloMessage;
     });
 });
+
+app.controller('ProfileCtrller', function($scope, $http) {
+    $http.get('/api/profile').success(function(display) {
+        $scope.profiles = display;
+    });
+});
