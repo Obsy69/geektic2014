@@ -4,7 +4,7 @@
 @rem  Gradle startup script for Windows
 @rem
 @rem ##########################################################################
-
+@set GRADLE_USER_HOME=F:\IUT\J2EE\TPDS
 @rem Set local scope for the variables with windows NT shell
 if "%OS%"=="Windows_NT" setlocal
 

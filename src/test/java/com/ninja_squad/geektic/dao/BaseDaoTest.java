@@ -35,4 +35,5 @@ public abstract class BaseDaoTest {
 
     @Autowired
     protected Destination destination;
+ 
 }
