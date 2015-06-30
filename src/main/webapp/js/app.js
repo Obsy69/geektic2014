@@ -8,6 +8,12 @@ app.controller('HelloCtrl', function($scope, $http) {
 
 app.controller('ProfileCtrller', function($scope, $http) {
     $http.get('/api/profile').success(function(display) {
-        $scope.profiles = display;
+        $scope.display = display;
+    });
+});
+
+app.controller('ProfileCtrller', function($scope, $http) {
+    $http.get('/api/profile').success(function(display) {
+        $scope.display = display;
     });
 });
