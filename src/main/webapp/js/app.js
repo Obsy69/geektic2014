@@ -11,7 +11,7 @@ app.controller('ProfileCtrller', function($scope, $http) {
         $scope.display = display;
     });
 });
-
+/*
 app.controller('ProfileCtrller', function($scope, $http) {
     $http.get('/api/profile').success(function(findByName) {
         $scope.findByName = findByName;
@@ -27,9 +27,21 @@ app.controller('ProfileCtrller', function($scope, $http) {
         $scope.findByMail = findByMail;
     });
 });
-
+*/
 app.controller('InterestCtrller', function($scope, $http) {
     $http.get('/api/interest').success(function(display) {
         $scope.display = display;
     });
+});
+
+angular.module('ngComboBoxExample', ['ngComboBox'])
+.controller('myController', function($scope) {
+  $scope.options = [
+    'Blue',
+    'Red',
+    'Pink',
+    'Purple',
+    'Green'
+  ];
+  $scope.color = '';
 });
