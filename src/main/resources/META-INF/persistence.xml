@@ -6,6 +6,7 @@
 	<persistence-unit name="GEEKTIC" transaction-type="RESOURCE_LOCAL">
 		<class>com.ninja_squad.geektic.service.Profile</class>
 		<class>com.ninja_squad.geektic.service.Sex</class>
+		<class>com.ninja_squad.geektic.service.Interest</class>
 		<properties>
 			<property name="hibernate.show_sql" value="true"/>
 		</properties>
